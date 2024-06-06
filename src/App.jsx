@@ -1,35 +1,62 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import { animals, birds, fishes, insects } from "./animalsList.js";
+import Home from "./routes/Home.jsx";
+import About from "./routes/About.jsx";
+import Root from "./Root";
+import CategoryPage from "./routes/CategoryPage.jsx";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import SinglePage from "./routes/SinglePage.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [zoo, setZoo] = useState({ animals, birds, fishes, insects });
+
+  const likesHandler = (name, category, action) => {
+    setZoo((prevZoo) => ({
+      ...prevZoo,
+      [category]: prevZoo[category].map((el) =>
+        el.name === name
+          ? { ...el, likes: el.likes + (action === "add" ? 1 : -1) }
+          : el
+      ),
+    }));
+  };
+  const removeHandler = (name, category) => {
+    setZoo((prevZoo) => ({
+      ...prevZoo,
+      [category]: prevZoo[category].filter((el) => el.name !== name),
+    }));
+  };
+
+
+  const router = createBrowserRouter([
+    { path: "/", element: <Home /> },
+    {
+      path: "/",
+      element: <Root />,
+      
+      children: [
+        {
+          path: ":category",
+          element: (
+            <CategoryPage
+              addLikes={likesHandler}
+              removeLikes={likesHandler}
+              removeCard={removeHandler}
+              {...zoo}
+            />
+          ),
+        },
+        { path: "/:category/:name", element: <SinglePage {...zoo} /> },
+        { path: "/About", element: <About /> },
+      ],
+    },
+  ]);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <RouterProvider router={router} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
