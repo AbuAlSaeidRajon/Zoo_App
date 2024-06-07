@@ -29,7 +29,7 @@ Live page [here](https://abualsaeidrajon.github.io/Zoo_App/)
 
 ## Screenshot
 
-![screenshot](./screenshot.png)
+![screenshot]()
 
 ## Sources 
 
