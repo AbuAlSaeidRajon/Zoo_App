@@ -25,7 +25,7 @@ The Zoo App is a web application designed for learning purposes. It allows users
 
 ## Setup and usage
 
-Live page [here](https://saurov-paul.github.io/Animal-Project/)
+Live page [here](https://abualsaeidrajon.github.io/Zoo_App/)
 
 ## Screenshot
 
