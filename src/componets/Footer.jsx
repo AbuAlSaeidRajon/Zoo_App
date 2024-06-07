@@ -1,9 +1,10 @@
-function Footer () {
-    return(
-        <footer>
+function Footer() {
+    return (
+      <footer>
         <p>Copyright &copy; Md Saeid</p>
-        </footer>
+      </footer>
     );
-};
-
-export default Footer;
+  };
+  
+  export default Footer;
+  
