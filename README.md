@@ -29,14 +29,9 @@ Live page [here](https://abualsaeidrajon.github.io/Zoo_App/)
 
 ## Screenshot
 <img width="1433" alt="Screenshot 2024-06-07 at 12 57 02 PM" src="https://github.com/AbuAlSaeidRajon/Zoo_App/assets/129788597/885f24fd-9ef7-4396-913a-7b2cf9a4b965">
-<img width="1433" alt="Screenshot 2024-06-07 at 12 31 48 PM" src="https://github.com/AbuAlSaeidRajon/Zoo_App/assets/1297<img width="1433" alt="Screenshot 2024-06-07 at 12 31 59 PM"
-<img width="1433" alt="Screenshot 2024-06-07 at 12 57 02 PM" src="https://github.com/AbuAlSaeidRajon/Zoo_App/assets/129788597/8538405d-da74-452e-8cbe-abf4b1d47d3a">
-88597/30999cea-e08f-457d-816e-e00f0d32b82c">
-
-
-
-
-![screenshot]()
+<img width="1433" alt="Screenshot 2024-06-07 at 12 31 48 PM" src="https://github.com/AbuAlSaeidRajon/Zoo_App/assets/129788597/9717a2f1-c5ce-43d5-abce-8ee7d4683e40">
+<img width="1433" alt="Screenshot 2024-06-07 at 12 31 59 PM" src="https://github.com/AbuAlSaeidRajon/Zoo_App/assets/129788597/6723ef5b-ce3d-46b9-8ac4-37880e5fb9e7">
+<img width="1433" alt="Screenshot 2024-06-07 at 12 35 15 PM" src="https://github.com/AbuAlSaeidRajon/Zoo_App/assets/129788597/49ff2dc7-42af-4f46-be8a-d181ad9d2501">
 
 ## Sources 
 
